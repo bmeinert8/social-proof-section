@@ -1,0 +1,100 @@
+/*CSS VARIABLES*/
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/*CSS RESET*/
+CSS MODERN RESET
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--White);
+  font-family: "League Spartan", serif;
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*TYPOGRAPHY*/
+
+.text-preset-1 {
+  color: var(--VeryDarkMagenta);
+  font-size: clamp(2.5rem, 2.2142857142857144rem + 1.4285714285714286vw, 3.5rem);
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: -0.09rem;
+}
+
+.text-preset-2 {
+  color: var(--DarkGrayishMagenta);
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 1.56rem;
+  letter-spacing: -0.04rem;
+}
+
+.text-preset-3 {
+  color: var(--VeryDarkMagenta);
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.text-preset-4 {
+  color: var(--SoftPink);
+  font-size: 1.0625rem;
+  font-weight: 400;
+}
+
+.text-preset-5 {
+  color: var(--White);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  letter-spacing: -0.019rem;
+}
+
